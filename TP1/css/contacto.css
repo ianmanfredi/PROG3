@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(circle at 51.13% 56.43%, #790889 0, #6d038b 25%, #5f008c 50%, #4f008d 75%, #3c028f 100%);
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+header{
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.header-icon{
+    max-height: 60px;
+    padding: 10px;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 20px;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .contacto-titulo {
+      font-weight: bold;
+      font-size: 34px; /* Ajusta el tamaño del título si es necesario */
+      text-align: center; /* Asegura que el título esté centrado */
+      margin-top: 70px;
+  }
+.contacto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 70px;
+
+    
+}
+
+.contacto-img-container{
+    margin-right: 80px;
+}
+
+
+.contacto-form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contacto-box {
+    margin-bottom: 15px;
+    width: 100%; /* Asegura que los campos ocupen todo el ancho disponible */
+}
+
+.contacto-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    text-align: left; /* Alinea las etiquetas a la izquierda */
+}
+
+.contacto-input{
+    padding: 10px;
+}
+
+.contacto-textarea{
+    padding: 15px;
+    height: 200px;
+}
+.contacto-boton{
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: blanchedalmond;
+    border-radius: 200px;
+    padding: 10px;
+    font-family: "Roboto";
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    margin-top: 150px;
+}
+
+.footer-icon{
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 20px;
+    padding: 10px;
+}
+
+.footer-logo{
+    width: 30px;
+    height: 30px;
+}
+
+.footer-redes{
+    display: grid;
+    gap: 15px;
+    margin: 10px
+}
+
+.nombre-redes{
+    text-decoration: none;
+    color: white;
+}
