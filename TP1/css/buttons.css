@@ -1,0 +1,17 @@
+.input-button{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding: 10px 25px;
+    background-color: #ff7000;
+    color: white;
+    border: none;
+    border-radius: 5px 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    width: 190px;
+}
+
+.input-button:hover{
+    background-color: #bb5100;
+}

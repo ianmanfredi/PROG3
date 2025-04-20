@@ -1,0 +1,84 @@
+/* ================================ */
+/* ========== VARIABLES ========== */
+/* ================================ */
+:root {
+  --color-white: #ffffff; /* Blanco general */
+  --navbar-bg: #222222; /* Fondo de la barra de navegación */
+  --sidebar-bg: #121212; /* Fondo del menú lateral */
+  --hover-bg: #444444; /* Color de fondo al hacer hover */
+  --border-divider: #444444; /* Borde inferior de títulos en sidebar */
+}
+
+/* ================================ */
+/* ==== BARRA DE NAVEGACIÓN ====== */
+/* ================================ */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: var(--navbar-bg);
+  color: var(--color-white);
+  position: fixed;
+  top: 0;
+  left: 200px;
+  right: 0;
+  height: 60px;
+  z-index: 100;
+}
+
+.navbar .img {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar .img .logo {
+  width: 120px;
+  height: 40px;
+}
+
+/* ================================ */
+/* ========= MENÚ LATERAL ========= */
+/* ================================ */
+.menu-lateral {
+  width: 200px;
+  height: 100%;
+  background-color: var(--sidebar-bg);
+  color: var(--color-white);
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
+}
+
+.menu-lateral h3 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  border-bottom: 1px solid var(--border-divider);
+  padding-bottom: 10px;
+}
+
+.menu-lateral ul {
+  list-style: none;
+}
+
+.menu-lateral li {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-lateral li:hover {
+  background-color: var(--hover-bg);
+}
+
+.menu-lateral a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}

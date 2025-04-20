@@ -1,0 +1,85 @@
+/* ============================= */
+/* === VARIABLES DE COLORES ==== */
+/* ============================= */
+:root {
+    --color-fondo-tarjetas: #161616;
+    --color-texto: #ffffff;
+    --sombra-tarjeta: rgba(0, 0, 0, 0.43);
+}
+
+/* ============================ */
+/* === CUERPO DE TARJETAS ==== */
+/* ============================ */
+.main-cards {
+    background-color: var(--color-fondo-tarjetas);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 60px 70px 240px;
+}
+
+.main-cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    text-align: center;
+    -webkit-box-shadow: 5px 5px 8px 0px var(--sombra-tarjeta);
+    -moz-box-shadow: 5px 5px 8px 0px var(--sombra-tarjeta);
+    box-shadow: 5px 5px 8px 0px var(--sombra-tarjeta);
+}
+
+
+.main-cards .card div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.main-cards .card div h2 {
+    color: var(--color-texto);
+    margin: 10px 0;
+}
+
+.main-cards .card div p {
+    color: var(--color-texto);
+    line-height: 1.6rem;
+    font-size: 1.2rem;
+}
+
+/* ============================ */
+/* ====== TARJETAS IMG ======= */
+/* ============================ */
+
+/* Tarjeta de Backend */
+.c-backend {
+    background: url(../img/backend.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-attachment: cover;
+}
+
+/* Tarjeta de Frontend */
+.c-frontend {
+    background: url(../img/frontend.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+}
+
+/* Tarjeta de UX/UI */
+.c-uxui {
+    background: url(../img/uxui.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+}

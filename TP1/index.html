@@ -1,41 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WikiDev</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <title>WikiDev Argentina - Inicio</title>
 
-<body>
-    <div class="barra">
-        <h1 class="titulo">WikiDev</h1>
+    <!-- =============================== -->
+    <!-- ========== FUENTES =========== -->
+    <!-- =============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =============================== -->
+    <!-- ========== ESTILOS =========== -->
+    <!-- =============================== -->
+    <!-- Estilos locales separados por propósito -->
+    <link rel="stylesheet" href="css/body.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/inputs.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+
+  <body>
+    <!-- =============================== -->
+    <!-- ========== NAVBAR ============ -->
+    <!-- =============================== -->
+    <div class="navbar">
+      <div class="img">
+        <img src="img/logo.png" alt="Logo WikiDev" class="logo" />
+      </div>
+      <div class="search">
+        <input
+          type="text"
+          class="label-input"
+          placeholder="Buscar en WikiDev..."
+        />
+      </div>
     </div>
 
+    <!-- =============================== -->
+    <!-- ======= MENÚ LATERAL ========= -->
+    <!-- =============================== -->
     <nav class="menu-lateral">
-        <h3>Menú</h3>
-        <ul>
-            <li><a href="#videos">Videos</a></li>
-            <li><a href="#cursos">Cursos</a></li>
-            <li><a href="#practica">Practicá</a></li>
-            <li><a href="#retos">Retos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>                
-        </ul>
+      <h3>Menú</h3>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#practica">Practicá</a></li>
+        <li><a href="#retos">Retos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
     </nav>
 
+    <!-- =============================== -->
+    <!-- =========== MAIN ============= -->
+    <!-- =============================== -->
     <main class="contenido">
-        <section class="bienvenida">
-            <div class="logo-wikidev">
-                <img src="img/logo3 (1).png" alt="Logo WikiDev" class="logo"> 
-            </div>
-            <p>
-                <span class="resaltado">WikiDev</span> 🚀 es una biblioteca con recursos pensada para devs que quieren seguir mejorando sus skills 💻. Acá vas a encontrar cursos, videos, retos y páginas interactivas para practicar y aprender a tu ritmo 📚. Todo en un solo lugar, simple, práctico y hecho para que disfrutes el proceso 🙌. Ya sea que estés empezando o quieras llevar tus conocimientos al siguiente nivel, <span class="resaltado">WikiDev</span> es tu compañero ideal en el camino del código 💡.
-            </p>
-        </section>
+      <!-- Sección de bienvenida -->
+      <section class="bienvenida">
+        <div class="logo-wikidev">
+          <img src="img/logo.png" alt="Logo WikiDev" class="logo" />
+          <input
+            type="text"
+            class="main-label-input"
+            placeholder="Buscar acerca de Python, Javascript, CSS3..."
+          />
+        </div>
+
+        <p>
+          <span class="resaltado">WikiDev</span> 🚀 es una biblioteca con
+          recursos pensada para devs que quieren seguir mejorando sus skills 💻.
+          Acá vas a encontrar cursos, videos, retos y páginas interactivas para
+          practicar y aprender a tu ritmo 📚. Todo en un solo lugar, simple,
+          práctico y hecho para que disfrutes el proceso 🙌. Ya sea que estés
+          empezando o quieras llevar tus conocimientos al siguiente nivel,
+          <span class="resaltado">WikiDev</span> es tu compañero ideal en el
+          camino del código 💡.
+        </p>
+      </section>
     </main>
+
+    <!-- =============================== -->
+    <!-- ========== CARDS ============= -->
+    <!-- =============================== -->
+    <div class="main-cards">
+      <div class="card c-frontend">
+        <div>
+          <h2>Front End</h2>
+          <p>
+            Explora acerca del mundo Front-End y tecnologías como React,
+            Angular, Vue.js
+          </p>
+        </div>
+      </div>
+      <div class="card c-backend">
+        <div>
+          <h2>Back End</h2>
+          <p>
+            Sumergete en el mundo del Back-End y explora mas allá de unas lineas
+            de código
+          </p>
+        </div>
+      </div>
+      <div class="card c-uxui">
+        <div>
+          <h2>UX/UI</h2>
+          <p>Dale el diseño, la forma, y el estilo a los sitios que amas</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- =============================== -->
+    <!-- =========== FOOTER =========== -->
+    <!-- =============================== -->
     <footer>
-        
+      <div class="main-footer">
+        <!-- Sección de logo y redes -->
+        <div class="f-s-logo">
+          <img src="img/logo.png" alt="Logo WikiDev" class="logo" />
+          <p>Follow us</p>
+          <div>
+            <img src="./img/social/facebook.png" alt="facebook" />
+            <img src="./img/social/x.png" alt="twitter x" />
+            <img src="./img/social/instagram.png" alt="instagram" />
+            <img src="./img/social/github.png" alt="github" />
+          </div>
+        </div>
+
+        <!-- Sección de enlaces -->
+        <div class="f-s-list">
+          <ul>
+            <li>Trabajá con Nosotros</li>
+            <li>Qué es WikiDev?</li>
+            <li>Soporte y Ayuda</li>
+            <li>Configuración de Cookies</li>
+          </ul>
+        </div>
+
+        <!-- Sección de apps -->
+        <div class="f-s-geton">
+          <strong>wikidev apps</strong>
+          <p>Si quieres saber sobre nuestra metodología innovadora:</p>
+          <img src="./img/apps/playstore.jpg" alt="playstore" />
+          <img src="./img/apps/appstore.jpg" alt="applestore" />
+        </div>
+      </div>
+
+      <!-- Derechos -->
+      <div class="copy-footer">
+        <p>Copyright 2025 &copy; - WikiDev Argentina</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

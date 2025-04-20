@@ -1,0 +1,46 @@
+/* =================================== */
+/* ========= VARIABLES GLOBALES ====== */
+/* =================================== */
+:root {
+  /* Colores del fondo en gradiente */
+  --gradiente-1: #790889;
+  --gradiente-2: #6d038b;
+  --gradiente-3: #5f008c;
+  --gradiente-4: #4f008d;
+  --gradiente-5: #3c028f;
+
+  /* Fuente principal */
+  --fuente-principal: "Roboto", sans-serif;
+}
+
+/* =================================== */
+/* ========= RESET BÁSICO ============ */
+/* =================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =================================== */
+/* ========= ESTILOS HTML ============ */
+/* =================================== */
+html {
+  font-family: var(--fuente-principal);
+  background-image: radial-gradient(
+    circle at 51.13% 56.43%,
+    var(--gradiente-1) 0,
+    var(--gradiente-2) 25%,
+    var(--gradiente-3) 50%,
+    var(--gradiente-4) 75%,
+    var(--gradiente-5) 100%
+  );
+}
+
+/* =================================== */
+/* ========= ESTILOS BODY ============ */
+/* =================================== */
+body {
+  min-width: 1280px;
+  height: 100%;
+}
