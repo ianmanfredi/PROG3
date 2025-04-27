@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP2</title>
+    <title>Creacion y eliminacion dinamica de elementos</title>
 </head>
+
 <body>
     <input type="text">
-    <button id="Boton">Agregar</button>
+    <button id="Boton">Agregar a la Lista</button>
     <ul></ul>
 
     <script>
-        
+
         const Boton = document.getElementById("Boton");
-        Boton.addEventListener("click", function() {
+        Boton.addEventListener("click", function () {
             const input = document.querySelector("input");
             const li = document.createElement("li");
             li.textContent = input.value;
@@ -22,10 +24,11 @@
             const BotonEliminar = document.createElement("button");
             BotonEliminar.textContent = "Eliminar";
             li.appendChild(BotonEliminar);
-            BotonEliminar.addEventListener("click", function() {
+            BotonEliminar.addEventListener("click", function () {
                 li.remove();
             });
         });
     </script>
 </body>
+
 </html>
