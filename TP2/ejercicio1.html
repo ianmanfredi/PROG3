@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2</title>
+</head>
+<body>
+    <h1 id="tituloPrincipal">TP2</h1>
+    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quod.</p>
+    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quod.</p>
+    <div id="contenedor"><ul> <li> 1</li> <li> 2</li> <li> 3</li> </ul> </div>
+    <script>
+        document.getElementById("tituloPrincipal").innerText = "Trabajo Practico 2";
+        
+        document.getElementsByClassName("parrafo").style.color = "red";
+        
+        const items = document.querySelectorAll("#contenedor li");
+        items.forEach(item => {
+            item.innerText += " - texto agregado";
+        });
+    </script>
+</body>
+</html><script>
+    document.getElementById("tituloPrincipal").innerText = "Trabajo Practico 2";
+    
+    document.getElementsByClassName("parrafo")[0].style.color = "red";
+    document.getElementsByClassName("parrafo")[1].style.color = "blue";
+    
+    document.querySelectorAll("#contenedor li")[0].innerText += "er parrafo ";
+    document.querySelectorAll("#contenedor li")[1].innerText += "do parrafo ";
+    document.querySelectorAll("#contenedor li")[2].innerText += "er parrafo ";
+  </script>
