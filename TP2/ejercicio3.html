@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos con CSS y manipulacion dinamica</title>
+</head>
+<body>
+    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quod.</p>
+    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quod.</p>
+    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quod.</p>
+    <style>
+        .resaltado {
+            background-color: yellow;
+            font-weight: bold;
+
+        }
+
+        .oculto {
+            display: none;
+            
+        }
+    </style>
+    <script>
+        const botonResaltar = document.createElement('button')
+        botonResaltar.textContent = "Resaltar"
+        botonResaltar.addEventListener("click", () => {
+            const parrafos = document.querySelectorAll(".parrafo")
+            parrafos.forEach(parrafo => {
+                parrafo.classList.toggle("resaltado")
+            })
+        })
+        document.body.appendChild(botonResaltar)
+
+        const botonOcultar = document.createElement('button')
+        botonOcultar.textContent = "Ocultar"
+        botonOcultar.addEventListener("click", () => {
+            const parrafos = document.querySelectorAll(".parrafo")
+            parrafos.forEach(parrafo => {
+                parrafo.classList.toggle("oculto")
+            })
+        })
+        document.body.appendChild(botonOcultar)
+    </script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WikiDev Argentina - Contacto</title>
+
+    <!-- =============================== -->
+    <!-- ========== FUENTES =========== -->
+    <!-- =============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =============================== -->
+    <!-- ========== ESTILOS =========== -->
+    <!-- =============================== -->
+    <link rel="stylesheet" href="css/body.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contacto.css" />
+    <link rel="stylesheet" href="css/inputs.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+  </head>
+
+  <body>
+    <!-- =============================== -->
+    <!-- ========== NAVBAR ============ -->
+    <!-- =============================== -->
+    <div class="navbar">
+      <div class="img">
+        <img src="img/logo.png" alt="Logo WikiDev" class="logo" />
+      </div>
+      <div class="search">
+        <input
+          type="text"
+          class="label-input"
+          placeholder="Buscar en WikiDev..."
+        />
+      </div>
+    </div>
+
+    <!-- =============================== -->
+    <!-- ======= MENÚ LATERAL ========= -->
+    <!-- =============================== -->
+    <nav class="menu-lateral">
+      <h3>Menú</h3>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#practica">Practicá</a></li>
+        <li><a href="#retos">Retos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- =============================== -->
+    <!-- ========= MISIÓN ============= -->
+    <!-- =============================== -->
+    <div class="main-section-mission">
+      <div class="section-text">
+        <h1>Nuestra Misión</h1>
+        <strong>
+          El objetivo de esta wiki es centralizar y organizar de forma clara,
+          accesible y colaborativa el conocimiento relacionado con la
+          programación y el desarrollo de software.
+        </strong>
+      </div>
+    </div>
+
+    <!-- =============================== -->
+    <!-- === FRASE INSPIRADORA ========= -->
+    <!-- =============================== -->
+    <div class="main-section-bkg">
+      <div>
+        <h2>
+          "Compartir código es compartir conocimiento. Una buena wiki es como
+          una terminal abierta al aprendizaje infinito."
+        </h2>
+        <i>Anónimo</i>
+      </div>
+    </div>
+
+    <!-- =============================== -->
+    <!-- ========= CONTACTO =========== -->
+    <!-- =============================== -->
+    <div class="contacto-container">
+      <!-- Formulario -->
+      <div class="contacto-form-container">
+        <div>
+          <h2>Conectate con Nosotros!</h2>
+          <p>¿Deseás saber más sobre nosotros? ¡Contactanos!</p>
+        </div>
+        <form>
+          <div class="contacto-box">
+            <label class="contacto-label" for="Nombre">Nombre:</label>
+            <input
+              type="text"
+              class="label-input"
+              placeholder="Escriba su nombre"
+              name="Nombre"
+              required
+            />
+          </div>
+          <div class="contacto-box">
+            <label class="contacto-label" for="Email">Email:</label>
+            <input
+              type="email"
+              class="label-input"
+              placeholder="Escriba su mail"
+              name="Email"
+              required
+            />
+          </div>
+          <div class="contacto-box">
+            <label class="contacto-label" for="Telefono">Teléfono:</label>
+            <input
+              type="text"
+              class="label-input"
+              placeholder="Escriba un número de teléfono"
+              name="Telefono"
+              required
+            />
+          </div>
+          <div class="contacto-box">
+            <label class="contacto-label" for="Comentarios">Comentarios:</label>
+            <textarea
+              name="Comentarios"
+              class="label-textarea"
+              placeholder="Deje un comentario (opcional)"
+            ></textarea>
+          </div>
+          <div class="contacto-box">
+            <label class="contacto-label" for="pais">País:</label>
+            <select id="pais" name="pais" class="label-select">
+              <option value="">Seleccione...</option>
+              <option value="ar">Argentina</option>
+              <option value="es">España</option>
+              <option value="cl">Chile</option>
+            </select>
+          </div>
+          <div class="contacto-btns">
+            <input class="input-button" type="submit" value="Enviar" />
+            <input class="input-button" type="reset" value="Reiniciar" />
+          </div>
+        </form>
+      </div>
+
+      <!-- Imagen al lado del formulario -->
+      <div class="image-form-container">
+        <img src="./img/homero.jpg" alt="Imagen de contacto" />
+      </div>
+    </div>
+
+    <!-- =============================== -->
+    <!-- =========== FOOTER =========== -->
+    <!-- =============================== -->
+    <footer>
+      <div class="main-footer">
+        <!-- Logo y redes -->
+        <div class="f-s-logo">
+          <img src="img/logo.png" alt="Logo WikiDev" class="logo" />
+          <p>Follow us</p>
+          <div>
+            <img src="./img/social/facebook.png" alt="Facebook" />
+            <img src="./img/social/x.png" alt="Twitter X" />
+            <img src="./img/social/instagram.png" alt="Instagram" />
+            <img src="./img/social/github.png" alt="GitHub" />
+          </div>
+        </div>
+
+        <!-- Enlaces útiles -->
+        <div class="f-s-list">
+          <ul>
+            <li>Trabajá con Nosotros</li>
+            <li>¿Qué es WikiDev?</li>
+            <li>Soporte y Ayuda</li>
+            <li>Configuración de Cookies</li>
+          </ul>
+        </div>
+
+        <!-- Apps -->
+        <div class="f-s-geton">
+          <strong>wikidev apps</strong>
+          <p>Si querés saber sobre nuestra metodología innovadora:</p>
+          <img src="./img/apps/playstore.jpg" alt="Play Store" />
+          <img src="./img/apps/appstore.jpg" alt="App Store" />
+        </div>
+      </div>
+
+      <!-- Derechos de autor -->
+      <div class="copy-footer">
+        <p>&copy; 2025 - WikiDev Argentina</p>
+      </div>
+    </footer>
+  </body>
+</html>

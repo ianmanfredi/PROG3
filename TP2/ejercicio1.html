@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Explorando el DOM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .parrafo {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="tituloPrincipal">Título Original</h1>
+
+    <p class="parrafo">Este es el primer párrafo.</p>
+    <p class="parrafo">Este es el segundo párrafo.</p>
+
+    <div id="contenedor">
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+    </div>
+
+    <script>
+        // Seleccionar el título y cambiar su texto
+        const titulo = document.getElementById('tituloPrincipal');
+        titulo.textContent = 'Título Modificado con JavaScript';
+
+        // Seleccionar los párrafos y cambiar su color
+        const parrafos = document.getElementsByClassName('parrafo');
+        for (let i = 0; i < parrafos.length; i++) {
+            parrafos[i].style.color = 'blue';
+        }
+
+        // Seleccionar todos los <li> y agregar texto extra
+        const items = document.querySelectorAll('#contenedor ul li');
+        for (let i = 0; i < items.length; i++) {
+            items[i].textContent += ` (Item ${i + 1} modificado)`;
+        }
+
+    </script>
+
+</body>
+
+</html>

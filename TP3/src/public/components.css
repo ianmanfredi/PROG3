@@ -1,0 +1,107 @@
+/* -- BUTTON, INPUT[BUTTON] -- */
+button,
+input[type="button"],
+input[type="submit"] {
+  padding: 10px 17px;
+  border: 0;
+  border-radius: 5px 5px;
+  background-color: #0092b8;
+  color: white;
+  font-size: 1.2rem;
+  min-width: 300px;
+  outline: none;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #055c72;
+}
+
+/* -- ELIMINAR -- */
+button.delete,
+input[type="button"].delete,
+input[type="submit"].delete {
+  padding: 10px 17px;
+  border: 0;
+  border-radius: 5px 5px;
+  background-color: #b1345e;
+  color: white;
+  font-size: 1.2rem;
+  min-width: 300px;
+  outline: none;
+}
+
+/* -- TITULOS -- */
+
+h2 {
+  font-weight: 300;
+  color: white;
+  font-size: 2rem;
+}
+
+h4 {
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.1rem;
+}
+
+/* -- LISTAS -- */
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+/* -- TEXTOS -- */
+span {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* -- POSICIONES -- */
+.flex {
+  display: flex;
+}
+
+/* -- INPUT[TEXT] -- */
+input.s_input {
+  border: 1px solid #4e4e4e;
+  border-radius: 10px 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #303030;
+  outline: 0;
+  color: white;
+}
+
+
+/* -- SELECT -- */
+select, input[type="date"]{
+  padding: 10px 20px;
+  border-radius: 10px 10px;
+  font-size: 1rem;
+  background-color: #303030;
+  border:1px solid #4e4e4e;
+  color: white;
+}
+
+/* -- LABEL -- */
+label{
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+/* -- MENSAJE -- */
+div#mensaje {
+  margin: 1.5rem 0;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px 10px;
+  font-size: 1rem;
+}

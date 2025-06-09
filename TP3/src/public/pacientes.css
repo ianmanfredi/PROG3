@@ -1,0 +1,23 @@
+/* -- PACIENTES -- */
+
+.pacientes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+
+.pacientes ul{
+    padding: 0;
+}
+
+.pacientes ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    color: white;
+}

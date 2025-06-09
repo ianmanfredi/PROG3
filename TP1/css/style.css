@@ -1,0 +1,83 @@
+.titulo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.contenido {
+  margin-left: 220px;
+  padding: 80px 20px 40px;
+  width: calc(100% - 220px - 20px);
+}
+
+.bienvenida {
+  text-align: left;
+  position: relative;
+  padding: 40px;
+  margin-bottom: 40px;
+  overflow: hidden;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+}
+
+.bienvenida::before {
+  content: "";
+  background-image: url("/img/posiblefondo.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: -15%;
+  left: -15%;
+  right: -15%;
+  bottom: -15%;
+  z-index: -1;
+  border-radius: 15px;
+  opacity: 0.9;
+
+  /* chat gpt*/
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 0.6) 50%,
+    rgba(0, 0, 0, 0) 80%
+  );
+  mask-image: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 0.6) 50%,
+    rgba(0, 0, 0, 0) 80%
+  );
+}
+
+.logo-wikidev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.logo {
+  height: 130px;
+  margin-bottom: 20px;
+}
+
+.bienvenida p {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 25px;
+  line-height: 1.6;
+  color: #dbdbdb;
+  text-align: left;
+  max-width: 100%;
+  position: relative;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;
+}
+
+.resaltado {
+  color: #c98508;
+  font-weight: bold;
+}

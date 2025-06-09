@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Interacción con Eventos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            width: 300px;
+        }
+
+        button {
+            padding: 8px 12px;
+            margin-left: 10px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        li.completado {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Lista de Tareas</h2>
+
+    <form id="formulario-tarea">
+        <input type="text" id="nueva-tarea" placeholder="Escribe una tarea...">
+        <button type="submit">Agregar</button>
+    </form>
+
+    <ul id="lista-tareas">
+        <!-- Aquí se agregarán las tareas -->
+    </ul>
+
+    <script>
+        const formulario = document.getElementById('formulario-tarea');
+        const listaTareas = document.getElementById('lista-tareas');
+        const inputTarea = document.getElementById('nueva-tarea');
+
+        formulario.addEventListener('submit', function (event) {
+            event.preventDefault(); // Previene que recargue la página
+
+            const texto = inputTarea.value.trim();
+
+            if (texto !== "") {
+                const nuevoLi = document.createElement('li');
+                nuevoLi.textContent = texto;
+
+                // Evento para marcar como completado al hacer clic
+                nuevoLi.addEventListener('click', function () {
+                    nuevoLi.classList.toggle('completado');
+                });
+
+                listaTareas.appendChild(nuevoLi);
+                inputTarea.value = ""; // Limpiar input
+            }
+        });
+    </script>
+
+</body>
+
+</html>
