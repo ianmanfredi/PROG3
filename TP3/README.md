@@ -1,51 +1,65 @@
-TP3 - Sistema de Turnos Medicos  
+# TP3 - Sistema de Turnos Medicos
 
-App en Node.js + Express para manejar turnos medicos. Tiene:  
-- API REST (online)  
-- Interfaz web (clinica)  
+## Descripcion
 
-Instalar y correr  
+Aplicacion desarrollada con Node.js y Express para la gestion de turnos medicos. Cuenta con una API REST y una interfaz web para uso interno de la clinica. Permite login, creacion y eliminacion de turnos, y gestion de pacientes.
 
-1. Clonar repo o bajar ZIP  
-2. Instalar paquetes:  
-`npm install`  
+## Tecnologias utilizadas
 
-3. Crear archivo `.env` con:  
-PORT=3001  
-JWT_SECRET=secreto  
+- Node.js  
+- Express  
+- JWT  
+- dotenv  
+- EJS  
 
-4. Iniciar:  
-`npm run dev`  
+## Instalacion
 
-Endpoints API  
+1. Clonar el repositorio o descargar el ZIP  
+2. Instalar las dependencias:  
+npm install
+3. Crear un archivo `.env` con el siguiente contenido:  
+PORT=3001
+JWT_SECRET=secreto
+4. Iniciar el servidor:  
 
-**Login**  
-POST /login  
-Body:  
-```json  
-{"email":"admin@clinica.com","password":"admin12345"}  
-```  
+## Endpoints de la API
 
-**Turnos**  
-- GET /api/v1/turnos/:idPaciente  
-- DELETE /api/v1/turnos/:idTurno  
-- POST /api/v1/turnos (necesita token)  
+### Login
 
-Header para POST:  
-`Authorization: Bearer <token>`  
+**POST** `/login`  
+Body:
+```json
+{
+"email": "admin@clinica.com",
+"password": "admin12345"
+}
+Turnos
+GET /api/v1/turnos/:idPaciente
 
-Rutas Web  
+DELETE /api/v1/turnos/:idTurno
 
-- / Inicio  
-- /turnos Listado  
-- /turnos/new Nuevo turno  
-- /turnos/update/:id Editar turno  
-- /pacientes Ver pacientes  
-- /pacientes/update/:id Editar paciente  
+POST /api/v1/turnos (requiere token)
+
+Header requerido para POST:
+Authorization: Bearer <token>
+Rutas Web
+/ Inicio
+
+/turnos Listado de turnos
+
+/turnos/new Nuevo turno
+
+/turnos/update/:id Editar turno
+
+/pacientes Ver pacientes
+
+/pacientes/update/:id Editar paciente
 
 Integrantes
+Ian Franco Manfredi
 
-- Ian Franco Manfredi  
-- Nicolas Superi  
-- Jeremias Geminiani  
-- Aejo Petricio
+Nicolas Superi
+
+Jeremias Geminiani
+
+Alejo Petricio
