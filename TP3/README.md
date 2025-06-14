@@ -8,8 +8,7 @@ Aplicacion desarrollada con Node.js y Express para la gestion de turnos medicos.
 
 - Node.js  
 - Express  
-- JWT  
-- dotenv  
+- JWT   
 - EJS  
 
 ## Instalacion
@@ -28,7 +27,6 @@ JWT_SECRET=secreto
 
 **POST** `/login`  
 Body:
-```json
 {
 "email": "admin@clinica.com",
 "password": "admin12345"
@@ -55,7 +53,7 @@ Rutas Web
 
 /pacientes/update/:id Editar paciente
 
-Integrantes
+## Integrantes
 Ian Franco Manfredi
 
 Nicolas Superi
